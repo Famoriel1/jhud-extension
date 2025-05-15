@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Jhud",
+  "version": "1.0",
+  "description": "Jhud Extension UI",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "permissions": []
+}
