@@ -1,36 +1,77 @@
 body {
   margin: 0;
+  padding: 0;
   background: transparent;
   font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;               /* Use flexbox on body */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  max-height: 400px; /* You can adjust this */
+  overflow-y: auto;
 }
 
 .menu {
   background-color: #111;
-  border-radius: 12px;
-  width: 250px;
-  padding: 20px;
+  border-radius: 16px;
+  width: 360px;
+  height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+  box-sizing: border-box;
+  gap: 12px;
 }
 
 .menu h1 {
-  margin: 0 0 20px;
-  font-size: 24px;
+  font-family: 'Jacquard 24', cursive;
+  font-size: 75px;
   text-align: center;
 }
 
 #injectBtn {
-  display: block;
-  width: 100%;
-  padding: 10px;
+  width: 250px;        /* bigger width */
+  height: 70px;        /* taller height */
   background-color: #444;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 24px;     /* bigger text */
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.3s ease;
 }
 
 #injectBtn:hover {
   background-color: #666;
 }
+
+
+.troll-btn {
+  width: 250px;
+  height: 50px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.troll-btn:hover {
+  background-color: #666;
+}
+

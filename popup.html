@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <div class="menu">
-      <h1>Jhud</h1>
-      <button id="injectBtn">Inject</button>
-    </div>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <link rel="stylesheet" href="popup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'Jacquard 24', cursive;
+      font-size: 48px;
+      color: #e74c3c;
+      text-shadow:
+        0 0 6px white,
+        0 0 12px white;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-family: 'Jacquard 24', cursive;
+      font-size: 40px;
+      color: #e74c3c;
+      text-shadow: 0 0 4px white;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .troll-btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      margin: 6px 0;
+      width: 220px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .troll-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h1>Jhud</h1>
+    <button id="injectBtn">Inject</button>
+
+    <div class="section-title">Troll Area</div>
+
+    <button id="runBtn1" class="troll-btn">Run Correct</button>
+    <button id="runBtn2" class="troll-btn">Run Incorrect</button>
+    <button id="runBtn3" class="troll-btn">Instant Finish</button>
+	<button id="setLessonsBtn">Set Lessons Completed</button>
+	<button id="setCoinsBtn">Set Coin Count</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
 </html>
